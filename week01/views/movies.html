@@ -1,0 +1,13 @@
+<h1>Movies:</h1>
+
+<ul>
+    {% for movie in movies%}
+        <li>
+            <a href="#">
+                {{movie.title}}
+            </a>
+        </li>
+    {% else %}
+        <li>No movies in the system!</li>
+    {% endfor %}
+</ul>
